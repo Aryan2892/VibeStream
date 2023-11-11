@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# VibeStream
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to VibeStream – a sleek and intuitive video player that brings your media to life. Our player is designed with simplicity and elegance in mind, ensuring users have the best viewing experience with easy-to-use controls and modern aesthetics.
+![image](https://github.com/Aryan2892/VibeStream/assets/78354139/dc3d88cf-e726-4aac-93c5-5349fb85a812)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- *Custom Video Controls:* Play, pause, and seek through your video with beautifully designed controls.
+- *Audio Detection:* Automatically detects if your video file contains audio tracks.
+- *Waveform Visualization:* See a visual representation of your video's audio with our integrated waveform display.
+- *Responsive Design:* Enjoy a consistent experience across all your devices, thanks to our responsive video player layout.
+- *Accessibility:* Designed with accessibility in mind, ensuring all users can navigate and control video playback.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with VibeStream, clone the repository to your local machine:
+```
+git clone https://github.com/yourusername/vibestream.git
+```
+## Install the dependencies:
 
-### `npm test`
+```
+cd vibestream
+npm install
+```
+## Run the application:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm start
+```
+## Usage
+To play a video, click on the "Input your video here" button and select a video file from your device. The video will automatically load and be ready for playback. If the video contains no audio, you will be alerted, and the upload process will be halted.
 
-### `npm run build`
+## Contribution
+We welcome contributions to VibeStream! If you have suggestions or issues, please feel free to open an issue or create a pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## License
+VibeStream is open-source software licensed under the MIT license. See the LICENSE file for more details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgments
+Thanks to the WaveSurfer.js team for the amazing audio waveform visualization.<br>
+Special thanks to all contributors and supporters of the VibeStream project.<br>
+We hope you enjoy using VibeStream as much as we enjoyed building it!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment 
+This application is deployed here : https://vibe-stream-vidyo.netlify.app/ <br>
+Preferred browser : Firefox , Google Chrome 
