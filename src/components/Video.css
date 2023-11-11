@@ -1,0 +1,124 @@
+.video-player-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr; /* video and waveform take 4 parts, metadata takes 1 part */
+  grid-template-rows: auto 1fr auto; /* file input, video, and waveform rows */
+  grid-gap: 10px; /* space between grid items */
+  height: 100vh;
+  padding: 10px;
+  background: #f8f8f8; /* Light grey background for the whole container */
+
+}
+
+button {
+  margin: 30px;
+  font-size: 18px;
+  height: 40px;
+  width: 250px;
+  border-radius: 10px;
+  border: none; /* Remove default border */
+  box-shadow: 1px 2px 7px rgba(0,0,0,.3);
+  background: rgb(141,217,252);
+  cursor: pointer;
+  outline: none; /* Remove the outline to make it look better */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #8acbff; /* Slightly lighter blue on hover */
+}
+
+
+.file-input-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  background: #ffffff; /* White background for the input section */
+  margin-bottom: 10px; /* Add space between sections */
+  grid-column: 1 / -1; /* stretches across all columns */
+  grid-row: 1;
+  /* Additional styling for file input section */
+}
+
+.video-section {
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  grid-column: 1 / -1; /* stretches across video and waveform columns */
+  grid-row: 2;
+  /* Ensure the video fills the container */
+  display: flex;
+  justify-content: center; /* Center video horizontally */
+  align-items: center; /* Center video vertically */
+  padding: 10px; /* Optional padding */
+}
+
+.video-section video {
+  width: 100%;
+  max-height: 100%; /* maintain aspect ratio */
+}
+
+.waveform-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff; /* White background for the waveform section */
+  margin-top: 10px; 
+  grid-column: 1 / -1; /* stretches across video and waveform columns */
+  grid-row: 3;
+  /* Additional styling for waveform section */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Ensure the button is above the video */
+  transition: opacity 0.5s ease; /* Smooth transition for the opacity */
+  opacity: 0; /* Start with an invisible overlay */
+}
+
+/* Show the overlay when it has the 'visible' class */
+.overlay.visible {
+  opacity: 1;
+}
+
+.play-pause-button {
+  font-size: 3rem; /* Large size for visibility */
+  color: white; /* White color for contrast */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Text shadow for the icons */
+  /* Add pointer events none to allow clicking through the icon if needed */
+  pointer-events: none;
+}
+
+.metadata-section {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: #ffffff;
+  grid-column: 5;
+  grid-row: 1 / -1; /* metadata spans all rows */
+  border-left: 1px solid #ccc; /* add a line to separate from the video section */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Adjust the height of the waveform container */
+#waveform {
+  height: 100px; /* Adjust height as needed */
+  /* Ensure the waveform fills its container */
+}
+
+/* Additional global styles */
+html, body {
+  background: #ececec; /* Light background for the entire page */
+  font-family: 'Arial', sans-serif; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
